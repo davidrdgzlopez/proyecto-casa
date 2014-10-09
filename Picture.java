@@ -15,6 +15,7 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+    private Circle sol;
 
     /**
      * Constructor for objects of class Picture
@@ -49,11 +50,18 @@ public class Picture
         roof.makeVisible();
 
         sun = new Circle();
-        sun.changeColor("yellow");
+        sun.changeColor("blue");
         sun.moveHorizontal(100);
         sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
+        
+        sol = new Circle();
+        sol.changeColor("green");
+        sol.changeSize(81);
+        sol.moveVertical(-40);
+        sol.moveHorizontal(-150);
+        sol.makeVisible();
     }
 
     /**
