@@ -71,7 +71,6 @@ public class Picture
         field.moveVertical(150);
         field.makeVisible();
         
-        sol.slowMoveVertical(310);
     }
 
     /**
