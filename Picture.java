@@ -100,4 +100,16 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    
+    /**
+     * Change this picture to use color display
+     */
+    public void movesun()
+    {
+        if (wall != null)   // only if it's painted already...
+        {
+            
+           sun.slowMoveVertical(120);
+        }
+    }
 }
