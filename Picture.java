@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle sol;
+    private Circle field;
 
     /**
      * Constructor for objects of class Picture
@@ -62,6 +63,13 @@ public class Picture
         sol.moveVertical(-40);
         sol.moveHorizontal(-150);
         sol.makeVisible();
+        
+        field = new Circle();
+        field.changeColor("green");
+        field.changeSize(1125);
+        field.moveHorizontal(-520);
+        field.moveVertical(150);
+        field.makeVisible();
     }
 
     /**
