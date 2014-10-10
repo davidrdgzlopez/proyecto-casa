@@ -72,7 +72,25 @@ public class Picture
         field.makeVisible();
         
     }
-
+    
+    /**
+     * Change this picture to move sun and change color to black and white
+     */
+    public void movesun()
+    {
+        if (wall != null)   // only if it's painted already...
+        {
+            
+           sun.slowMoveVertical(120);
+           wall.changeColor("black");
+           window.changeColor("white");
+           roof.changeColor("black");
+           sun.changeColor("black");
+           field.changeColor("black");
+           sol.changeColor("black");
+        }
+    }
+    
     /**
      * Change this picture to black/white display
      */
@@ -98,18 +116,6 @@ public class Picture
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("yellow");
-        }
-    }
-    
-    /**
-     * Change this picture to use color display
-     */
-    public void movesun()
-    {
-        if (wall != null)   // only if it's painted already...
-        {
-            
-           sun.slowMoveVertical(120);
         }
     }
 }
