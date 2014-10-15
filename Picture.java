@@ -16,6 +16,7 @@ public class Picture
     private Triangle roof;
     private Circle sun;
     private Circle field;
+    private Person juan;
 
     /**
      * Constructor for objects of class Picture
@@ -66,7 +67,7 @@ public class Picture
     }
     
     /**
-     * Change this picture to move sun and change color to black and white
+     * Change this picture to move sun and change picture color to black and white
      */
     public void movesun()
     {
@@ -82,6 +83,22 @@ public class Picture
         }
     }
     
+     /**
+     * Change this picture to make a person apear and go near the house
+     */
+    public void moveperson()
+    {
+        if (wall != null)   // only if it's painted already...
+        {
+           juan = new Person();
+           juan.moveVertical(10);
+           juan.moveHorizontal(200);
+           juan.moveVertical(20);
+           juan.makeVisible();
+           juan.slowMoveVertical(-20);
+           juan.slowMoveHorizontal(-170);
+        }
+    }
     /**
      * Change this picture to black/white display
      */
