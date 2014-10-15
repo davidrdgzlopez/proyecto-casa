@@ -15,7 +15,6 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
-    private Circle sol;
     private Circle field;
 
     /**
@@ -57,13 +56,6 @@ public class Picture
         sun.changeSize(80);
         sun.makeVisible();
         
-        sol = new Circle();
-        sol.changeColor("green");
-        sol.changeSize(81);
-        sol.moveVertical(-120);
-        sol.moveHorizontal(-190);
-        sol.makeVisible();
-        
         field = new Circle();
         field.changeColor("green");
         field.changeSize(1125);
@@ -87,7 +79,6 @@ public class Picture
            roof.changeColor("black");
            sun.changeColor("black");
            field.changeColor("black");
-           sol.changeColor("black");
         }
     }
     
