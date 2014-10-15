@@ -91,12 +91,12 @@ public class Picture
         if (wall != null)   // only if it's painted already...
         {
            juan = new Person();
-           juan.moveVertical(10);
-           juan.moveHorizontal(200);
+           juan.moveVertical(20);
+           juan.moveHorizontal(-220);
            juan.moveVertical(20);
            juan.makeVisible();
-           juan.slowMoveVertical(-20);
-           juan.slowMoveHorizontal(-170);
+           juan.slowMoveVertical(-22);
+           juan.slowMoveHorizontal(95);
         }
     }
     /**
